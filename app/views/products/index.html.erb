@@ -1,0 +1,33 @@
+<h1>Products</h1>
+
+<%= search_form_for @search do |f| %>
+  <div class='field'>
+    <%= f.label :name_cont, "Name contains" %>
+    <%= f.text_field :name_cont %>
+  </div>
+  <div class='field'>
+    <%= f.label :price_gteq, "Price between" %>
+    <%= f.text_field :price_gteq %>
+    <%= f.label :price_lteq, "" %>
+    <%= f.text_field :price_lteq %>
+  </div>
+
+  <div class="actions"><%= f.submit "Search" %>
+<% end %>
+<br>
+<br>
+
+<table id='products' border=1 cellspacing=0 cellpadding=5>
+  <tr bgcolor=#CCCCCC>
+    <td><%= sort_link @search, :name, "Product Name" %></td>
+    <td><%= sort_link @search, :released_on, "Release Date" %></td>
+    <td><%= sort_link @search, :price, "Price" %></td>
+  </tr>
+<% @products.each do |product| %>
+  <tr>
+    <td><%= link_to(product.name, product) %></td>
+    <td><%= product.released_on.strftime("%B %e, %Y") %></td>
+    <td align=right><%= number_to_currency(product.price, precision: 0, unit: '') %></td>
+  </tr>
+<% end %>
+</table>
