@@ -1,8 +1,8 @@
 #搜尋&排序 by Ransack
 
 ##Reference:
-[Video]: http://railscasts.com/episodes/370-ransack
-[Wiki]: https://github.com/activerecord-hackery/ransack/wiki/Basic-Searching
+<http://railscasts.com/episodes/370-ransack>
+<https://github.com/activerecord-hackery/ransack/wiki/Basic-Searching>
 
 ##Step by Step:
 * git clone https://github.com/afgnsu/ransack.git
