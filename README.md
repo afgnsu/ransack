@@ -14,3 +14,5 @@
 7. vi config/database.yml
 8. rake db:create db:migrate db:seed
 9. rails s
+
+![Demo] (https://github.com/afgnsu/ransack/blob/master/DEMO.png)
