@@ -1,4 +1,4 @@
-#搜尋&排序 by Ransack
+#搜尋&排序 by Ransack - 蘇介吾 104/10/04
 
 ##Reference:
 * <http://railscasts.com/episodes/370-ransack>
